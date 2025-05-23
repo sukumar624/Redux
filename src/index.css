@@ -14,3 +14,55 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+/* Product Page CSS */
+
+.single_product {
+  background: #f8f3ff;
+  padding: 20px 15px;
+  border-radius: 8px;
+}
+
+.product_img img {
+  height: 80px;
+  margin: auto;
+  display: table;
+  background-blend-mode: darken;
+}
+
+.product_img {
+  background: #f8f3ff;
+  margin-bottom: 16px;
+}
+
+.product_info h4 {
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: center;
+  min-height: 30px;
+}
+
+.product_info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_info button {
+  border: 0;
+  background: #a05dff;
+  font-size: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.product_info button:hover {
+  background: #8b4bff;
+}

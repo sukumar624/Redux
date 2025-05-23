@@ -20,23 +20,22 @@ const Products = () => {
     }
 
     return (
-        <div>
+        <div className="products py-5">
             <div className="container">
                 <div className="row g-3">
                     {
                         product.map((item) => (
                             <div className="col-sm-3" key={item.id}>
                                 <div className="single_product">
-                                    <div className="card">
-                                        <div className="product_img">
-                                            <img src={item.image} className="img-fluid" alt="" />
-                                        </div>
-                                        <div className="product_info">
-                                            <h4>{item.title}</h4>
-                                            <p>
-                                                <FaRupeeSign /> {item.price}
-                                            </p>
-                                        </div>
+                                    <div className="product_img">
+                                        <img src={item.image} className="img-fluid" alt="" />
+                                    </div>
+                                    <div className="product_info text-center">
+                                        <h4>{item.title}</h4>
+                                        <p>
+                                            <FaRupeeSign /> {item.price}
+                                        </p>
+                                        <button>Add Product</button>
                                     </div>
                                 </div>
                             </div>
